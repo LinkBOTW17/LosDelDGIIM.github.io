@@ -357,7 +357,7 @@ Podremos ejecutarlo y lo detendremos mediante down. Para ver la API podemos cone
 - /auth/login: Un método POST que nos permite autenticar un usuario, devolviendo un token de acceso JWT. La autenticación se realiza mediante un email y una contraseña.
 El acceso a este servicio está protegido por HTTP Basic Auth, por lo que deberemos enviar las credenciales en la cabecera de la petición.
 
-- /alumnos/alumno/\<email\>: Un método GET que nos permite obtener información sobre un alumno en particular. Este método requiere un token de acceso JWT que se obtiene al autenticar al usuario mediante el método anterior. El token portará la identidad y rol del usuario. El rol alumno solo puede solicitar sus datos mediante que un administrador puede solicitar los datos de cualquier alumno. Retorna un objeto JSON.
+- /alumnos/alumno/\<email\>: Un método GET que nos permite obtener información sobre un alumno en particular. Este método requiere un token de acceso JWT que se obtiene al autenticar al usuario mediante el método anterior. El token portará la identidad y rol del usuario. El rol alumno solo puede solicitar sus datos mientras que un administrador puede solicitar los datos de cualquier alumno. Retorna un objeto JSON.
 
 Una vez levantado el servidor, podemos comprobar que funciona ejecutando pruebaEntorno.sh, que nos debería devolver la información en formato JSON de un alumno junto con comentarios de relleno estilo Lorem. Para ejecutarlo deberemos tener instalado curl. Además es recomendable copiar la salida a algún interprete de JSON para ver la salida de forma más legible.
 
@@ -557,7 +557,7 @@ Una forma sencilla de monitorización es ver los logs del sistema, se almacenan 
 ## Journalctl
 En sistemas modernos basados en systemd, todos los eventos del sistema y de los servicios se registran en el journal. El servicio encargado de esta tarea es `systemd-journald`.
 
-Por defecto, el journal es volátil, lo que significa que los logs se almacenan en memoria y se pierden tras un reinicio. Para habilitar persistencia:
+Por defecto, el journal es volátil, lo que significa que los logs se almacenan en memoria y se pierden tras un reinicio. Para habilitar persistencia, como en Rocky Linux por defecto es "auto", basta con crear el directorio:
 ```shell
 sudo mkdir -p /var/log/journal
 sudo systemctl restart systemd-journald
