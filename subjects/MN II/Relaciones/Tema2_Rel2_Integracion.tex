@@ -7,7 +7,7 @@
     \begin{enumerate}
         \item Explica cómo podrías obtener fórmulas de tipo interpolatorio clásico con más exactitud de $n$, cuando puedes elegir libremente los nodos de interpolación: $x_0, \ldots, x_n$.
         
-        Al tratarse de fórmulas de tipo interpolatorio con $n+1$ nodos, sabemos que tendrán grado mínimo de exactitud $n$. Para añadir $k$ grados de exactitud más, hemos de imponer exactitud en $\{x^i\Pi(x)\mid i\in \{0,1,\ldots,k-1\}\}$, donde $k\in \{1,2,n+1\}$.
+        Al tratarse de fórmulas de tipo interpolatorio con $n+1$ nodos, sabemos que tendrán grado mínimo de exactitud $n$. Para añadir $k$ grados de exactitud más, hemos de imponer exactitud en $\{x^i\Pi(x)\mid i\in \{0,1,\ldots,k-1\}\}$, donde $k\in \{1,2,\ldots,n+1\}$.
 
         \item Sea $a$ igual a la suma de los dígitos de tu DNI; sea $b = a + 3$. Calcula la fórmula con nodos $a, x_1$ de mayor grado de exactitud para aproximar la integral entre $a$ y $b$.
         
@@ -258,7 +258,7 @@
 
     Para probar la existencia de $\alpha_0, \alpha_1, \alpha_2, \alpha_3$ tales que se tiene lo pedido, basta con ver que lo anterior es una combinación lineal de los $L_i(f)$; y para ello, basta con comprobar que $c$ y $d$ son una combinación lineal de los $L_i(f)$, ya que $a$ y $b$ ya lo son. Observando el sistema vemos que esto se tiene (no van a quedar multiplicándose ni dividiéndose, solo sumando), luego queda demostrada la existencia de $\alpha_0, \alpha_1, \alpha_2, \alpha_3$ tales que se tiene lo pedido.
 
-    Para obtener el peso de $f'(0)$, basta con obtener el coeficiente de $b$ en la expresión de $L(p)$. Vemos que no aparece explícitamente, y tampoco aparecerá en $c$ ni en $d$ (puesto que $c,d$ dependerán de sí mismos y de $a$). Pore tanto, el peso de $f'(0)$ es $0$.
+    Para obtener el peso de $f'(0)$, basta con obtener el coeficiente de $b$ en la expresión de $L(p)$. Vemos que no aparece explícitamente, y tampoco aparecerá en $c$ ni en $d$ (puesto que $c,d$ dependerán de sí mismos y de $a$). Por tanto, el peso de $f'(0)$ es $0$.
 \end{ejercicio}
 
 \begin{ejercicio}~\label{ej:2.3.3}
@@ -329,7 +329,7 @@
         \end{equation*}
         \item Llama $h = b - a$. De forma similar a la vista en clase para la integración adaptativa con la fórmula de Simpson, obtén un criterio de estimación del error
         \begin{equation*}
-            \int_{a}^{b} f(x) dx - T(a, m) - T(m, b)
+            \left|\int_{a}^{b} f(x) dx - T(a, m) - T(m, b)\right|
         \end{equation*}
         basado en $T(a, b)$, $T(a, m)$ y $T(m, b)$, siendo $m = \frac{a+b}{2}$.
 
@@ -424,7 +424,7 @@
 
         Para determinar el orden de exactitud, tenemos que ver si la fórmula es exacta en $\{x^3,x^4\}$:
         \begin{align*}
-            \int_{-1}^{1} x^3(1 - x^2)dx &= 0 \neq \dfrac{2}{15}\left(-1+1\right) = 0\\
+            \int_{-1}^{1} x^3(1 - x^2)dx &= 0 = \dfrac{2}{15}\left(-1+1\right) \\
             \int_{-1}^{1} x^4(1 - x^2)dx &= 2\left[\dfrac{1}{5} - \dfrac{1}{7}\right] = \dfrac{4}{35} \neq \dfrac{2}{15}\left(1+0+1\right) = \dfrac{4}{15}
         \end{align*}
 
