@@ -905,3 +905,97 @@
 173. ¿En que fase de un agente reactivo percibe el entorno del mundo a través de sus sensores?
     - ( ) Fase de acción
     - (x) Fase de Percepción
+
+174. Una arquitectura reactiva es aquella que...
+    - ( ) Incluye una clase de modelo centralizado de representación simbólica del mundo, y hace uso de razonamiento complejo.  
+    - ( ) No incluye ninguna clase de modelo centralizado de representación simbólica del mundo, y hace uso de razonamiento complejo.  
+    - ( ) Incluye una clase de modelo centralizado de representación simbólica del mundo, y no hace uso de razonamiento complejo.  
+    - (x) No incluye ninguna clase de modelo centralizado de representación simbólica del mundo, y no hace uso de razonamiento complejo.
+
+176. ¿Qué tipo de agente utilizarías para implementar un robot dedicado a la limpieza del fondo de una piscina?
+    - (x) Reactivo, por su bajo coste y fácil implementación.  
+    - ( ) Deliberativo, porque necesita un modelo del mundo en el que trabaja.  
+    - ( ) Social, para que colaborase con la gente que se bañase en la piscina.  
+
+177. Los agentes reactivos:
+    - ( ) No deben simplemente actuar en respuesta a su entorno, deben ser capaces de exhibir comportamientos dirigidos a lograr que sean oportunos, y tomar la iniciativa cuando sea apropiado.
+    - (x) Deben percibir el entorno y responder de una forma temporal a los cambios que ocurren en dicho entorno.
+    - ( ) Deben ser capaces de interactuar, cuando sea apropiado, con otros agentes artificiales o humanos para completar su propio proceso de resolución del problema y ayudar a otros con sus actividades.
+
+180. Hay tres tipos de agentes: agentes sociales, agentes reactivos y ...
+    - (x) Deliberativos
+    - ( ) Imperativos
+
+181. Un navegador con GPS necesita de un agente:
+    - ( ) Social
+    - ( ) Reactivo
+    - (x) Deliberativo
+
+1. Las interacciones entre agentes ¿En qué tipo de agentes se dan?
+    - ( ) Reactivos
+    - ( ) Deliberativos
+    - (x) Sociales
+
+3. Un agente ___________ tiene la iniciativa y es capaz de aprovechar oportunidades.
+    - (x) Deliberativo
+    - ( ) Reactivo
+
+4. ¿en qué basa sus decisiones un agente?
+    - ( ) aleatoriedad
+    - (x) entorno
+    - ( ) ordenes predefinidas
+
+5. ¿Cuáles de estas características pertenecen a un agente deliberativo?
+    - ( ) Genera y trata de alcanzar sus propios objetivos
+    - ( ) Reconoce oportunidades
+    - ( ) Toma la iniciativa
+    - (x) Todas las anteriores son correctas
+
+10. Los agentes deliberativos, en comparación con los agentes reactivos, son complejos y tardan más en reaccionar ya que tienen un modelo del mundo.
+    - (x) Verdadero
+    - ( ) Falso
+
+11. ¿Cuál de las siguientes características NO es imprescindible en un agente?
+    - ( ) Reactivo
+    - ( ) Proactivo
+    - (x) Social
+
+12. De las siguientes opciones, señale las que sean ciertas para un agente:
+    - [ ] Un agente reactivo puede pasar a ser deliberativo si crea una representación del mundo que lo rodea
+    - [x] Un agente reactivo, por norma general, será más rápido en dar una respuesta a un estímulo que un agente deliberativo
+    - [ ] Un agente reactivo puede contener algunas fórmulas lógicas y mecanismos deductivos para decidir cómo actuar sobre su entorno
+    - [x] Un agente que toma decisiones en función de los estímulos que recibe y siguiendo un comportamiento programado sin realizar ningún tipo de deducción lógica es un agente reactivo
+
+18. Un hipotético sistema de transporte de trenes en el cual puede haber tanto locomotoras automatizadas como locomotoras controladas por humanos es...
+    - ( ) Un sistema multi-agente exclusivamente deliberativo
+    - ( ) Un sistema de computación distribuida con funcionamiento de paso de mensajes
+    - (x) Un sistema multi-agente híbrido con una potente capacidad reactiva
+    - ( ) Un sistema controlado por árbitros humanos
+
+19. Los principales problemas de los agentes reactivos son:
+    - [x] Necesitan disponer de suficiente información sobre su entorno para actuar adecuadamente
+    - [ ] No hay metodologías claras para crear este tipo de agentes: sigo siendo un desarrollo por prueba y error
+    - [x] Es difícil el aprendizaje y la mejora de las capacidades de los agentes con el tiempo
+    - [ ] Son robustos, tratables computacionalmente y tolerantes a fallos
+
+2. Un modelo cognitivo se asocia con:
+    - (x) Sistemas que piensan como humanos.
+    - ( ) Sistemas que actúan como humanos.
+    - ( ) Sistemas que piensan racionalmente.
+    - ( ) Sistemas que actúan racionalmente.
+
+5. ¿Es posible un agente sin sensores?
+    - ( ) Sí, porque si tiene un modelo del mundo no le hacen falta sensores para actuar en base a él.
+    - (x) No, porque dejaría de ser un agente al no percibir el entorno en el que se encuentra.
+    - ( ) No, porque dejaría de ser un agente al no tener autonomía.
+    - ( ) No, porque dejaría de ser un agente al actuar siempre de la misma manera en cualquier situación.
+
+8. ¿Un agente que sea pro-activo debe ser capaz de exhibir comportamientos dirigidos a lograr los objetivos que se plantee?
+    - (x) V.
+    - ( ) F.
+
+11. El periodo de gestación de la IA fue ___________.
+    - ( ) (1979–1975).
+    - (x) (1943–1955).
+    - ( ) (1900–1905).
+    - ( ) (2000–2020).
